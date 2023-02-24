@@ -18,19 +18,32 @@
 
         $num = 3e2; // 3 x 10(2)
         echo"valor é $num";
-
-        $num2 = (int) 3e2; // coerção -forçando tipo
+ 
+        // $num2 = (int) 3e2; // coerção -forçando tipo
         var_dump($num2);
 
         $num3 = (float)"980";
         var_dump($num3);
 
-        $casado = true;
-        //$casado = false;
-        print"O valor para casado é $casado";
+        $hunter = true;
+        $hunter= false;
+        print"O valor para casado é $hunter";
         // Em php quando dento de um print ou echo, de apresenta como true = 1 e false = vazio.
 
-        // continuar aos  28m30s - https://www.youtube.com/watch?v=JFEelabfc1o&list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_&index=21&ab_channel=CursoemV%C3%ADdeo
+        $vet = [6, 2.5, "Maria", false];
+        var_dump($vet)
+
+        // exemplo array - Tipo composto
+    ?>
+    <?php 
+         class Pessoal {
+            private string $nome;
+          }
+  
+          $p = new Pessoal;
+          var_dump($p);
+
+        // exemplo de objeto - Tipos compostos
     ?>
 </body>
 </html>
